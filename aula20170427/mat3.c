@@ -1,13 +1,15 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-int main (){
-    float n,b,resultado;
-    printf("Entre com o valor de n: ");
-    scanf("%f",&n);
-    printf("Entre com o valor de b: ");
-    scanf("%f",&b);
-    resultado = log10(n)/log10(b);
-    printf("Log de n na base b e: %g\n", resultado);
-    return EXIT_SUCCESS;
+#include<stdio.h>
+#include<math.h>
+
+int main(){
+
+    double numero, base, resultado;
+
+    printf("Digite o numero e a base para o calculo do log: ");
+    scanf("%lf", &numero);
+    scanf("%lf", &base);
+
+    resultado = log10(numero)/log10(base);
+    printf("\nO logaritmo vale: %lf", resultado);
+    return 0;
 }
